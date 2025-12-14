@@ -58,7 +58,9 @@ environment in case of a forced and buggy bootloader.
 - Begonia  
 - Blossom  
 - Camellia
-
+  
+### Realme
+- rmx2180
 ---
 
 ## Make Syntax
@@ -75,10 +77,14 @@ cd uniLoader
 cp /home/user/linux/arch/arm64/boot/Image blob/Image
 cp /home/user/linux/arch/arm64/boot/dts/exynos/exynos8895-dreamlte.dtb blob/dtb
 cp /home/user/ramdisk.gz blob/ramdisk
-make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu- dreamlte_defconfig
+make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu- blossom_defconfig
 make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu-
 ```
-
+for rmx2180
+```bash
+make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu- blossom_defconfig
+make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu-
+```
 ---
 
 ## License
