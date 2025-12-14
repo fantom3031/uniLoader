@@ -3,12 +3,12 @@
 #include <lib/simplefb.h>
 #include <lib/debug.h>
 
-/* This is a generic uniLoader port for Xiaomi Blossom devices:
- * Poco C3, C31
+/* This is a generic uniLoader port for Xiaomi Blossom (no, for realme c15 )devices:
+ * (Poco C3, C31
  * Redmi 9A, 9I, 9AT, 10A, 9A Sport, 9I Sport, 9 Active, 9 India,
- * 9C and 9C NFC
- *
- * Works with R vendor only */
+ * 9C and 9C NFC)
+ * realme c15 
+ * Works with rui1 */
 
 #define UART_BASE 0x11002000
 #define UART_LSR_BASE	0x14
@@ -36,7 +36,7 @@ static struct video_info blossom_fb = {
 	.width = 736,
 	.height = 1600,
 	.stride = 4,
-	.address = (void *)0x7ec50000
+	.address = (void *)0x7b890000
 };
 
 int blossom_drv(void)
@@ -46,7 +46,8 @@ int blossom_drv(void)
 }
 
 struct board_data board_ops = {
-	.name = "xiaomi-blossom",
+	.name = "realme-rmx2180",
+// .name = "xiaomi-blossom",
 	.ops = {
 		.drivers_init = blossom_drv,
 	},
