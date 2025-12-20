@@ -25,3 +25,4 @@ lib-$(CONFIG_VOLLA_ALGIZ) += volla/board-algiz.o
 lib-$(CONFIG_XIAOMI_BEGONIA) += xiaomi/board-begonia.o
 lib-$(CONFIG_XIAOMI_BLOSSOM) += xiaomi/board-blossom.o
 lib-$(CONFIG_XIAOMI_CAMELLIA) += xiaomi/board-camellia.o
+lib-$(CONFIG_REALME_RMX2180) += realme/board-rmx2180.o
