@@ -3,12 +3,12 @@
 #include <lib/simplefb.h>
 #include <lib/debug.h>
 
-/* This is a generic uniLoader port for Xiaomi Blossom devices:
+/* This is a generic uniLoader port for realme devices:
  * Realme c15 c11 c12 
  * 
  *
  *
- * Works with R vendor only */
+ * Works with Q vendor only */
 
 #define UART_BASE 0x11002000
 #define UART_LSR_BASE	0x14
@@ -33,10 +33,10 @@ void uart_puts(const char *s)
 
 static struct video_info rmx2180_fb = {
 	.format = FB_FORMAT_ARGB8888,
-	.width = 720,
+	.width = 736,
 	.height = 1600,
 	.stride = 4,
-	.address = (void *)0x7bd10000
+	.address = (void *)0x7b890000  //0x7bd10000 for rui2
 };
 
 int rmx2180_drv(void)
