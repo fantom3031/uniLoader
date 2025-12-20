@@ -82,7 +82,7 @@ make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu-
 ```
 for rmx2180
 ```bash
-make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu- blossom_defconfig
+make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu- rmx2180_defconfig
 make ARCH=aarch64 CROSS_COMPILE=aarch64-linux-gnu-
 ```
 ---
